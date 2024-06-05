@@ -1,0 +1,51 @@
+export const ProjectData = [
+  {
+    id: 1,
+    image: "/images/Projects/prime.PNG",
+    name: "PrimeEstates",
+    tech: "MERN stack, Tailwind CSS",
+    git: "https://github.com/NivedHari/mern-estate.git",
+  },
+  {
+    id: 2,
+    image: "/images/Projects/blog.PNG",
+    name: "TypoTales Blog",
+    tech: "MERN stack, Tailwind CSS",
+    git: "https://github.com/NivedHari/blog-mern.git",
+  },
+  {
+    id: 3,
+    image: "/images/Projects/chat.png",
+    name: "ChatsApp",
+    tech: "Node.js,Express,MySQL,Socket.io,AWS",
+    git: "https://github.com/NivedHari/Chat-app-node.js_express.git",
+  },
+  {
+    id: 4,
+    image: "/images/Projects/expense1.PNG",
+    name: "Expense Tracker",
+    tech: "Node.js,Express,MongoDB,AWS,RazorPay",
+    git: "https://github.com/NivedHari/Expense-tracker-node.Js_express.git",
+  },
+  {
+    id: 5,
+    image: "/images/Projects/expense2.PNG",
+    name: "Expense Tracker",
+    tech: "React.js,Firebase,Tailwind CSS",
+    git: "https://github.com/NivedHari/expense-tracker-react.git",
+  },
+  {
+    id: 6,
+    image: "/images/Projects/mailbox.PNG",
+    name: "Mailbox Client",
+    tech: "React.js, Firebase, Bootstrap CSS",
+    git: "https://github.com/NivedHari/mail-box-react.git",
+  },
+  {
+    id: 7,
+    image: "/images/Projects/imdb.PNG",
+    name: "Imdb Clone",
+    tech: "Next.js,Tailwind CSS",
+    git: "https://github.com/NivedHari/imdb-clone-next.js.git",
+  },
+];

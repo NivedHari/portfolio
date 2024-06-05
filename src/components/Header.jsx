@@ -1,25 +1,21 @@
 import React, { useState } from "react";
-import {
-  Bars3BottomRightIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
   let Links = [
-    { name: "About", link: "/" },
-    { name: "Projects", link: "/" },
-    { name: "Contact", link: "/" },
+    { name: "About", link: '#about' },
+    { name: "Projects", link: "#projects" },
+    { name: "Contact", link: "#contact" },
   ];
   let [open, setOpen] = useState(false);
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 border-b border-gray-700 font-poppins px-14 bg-black z-50">
       <div className="md:flex items-center justify-between  text-white py-4 md:px-10 px-7 z-50">
-
         {/* logo section */}
-        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-full">
-          <img src={"/images/icon.svg"} width={150} height={100}/>
-        </div>
+        <a href="#about" className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-full">
+          <img src={"/images/icon.svg"} width={150} height={100} />
+        </a>
         {/* Menu icon */}
         <div
           onClick={() => setOpen(!open)}
@@ -33,8 +29,8 @@ export default function Header() {
             open ? "top-17" : "top-[-490px]"
           }`}
         >
-          {Links.map((link) => (
-            <li className="md:ml-8 md:my-0 my-7 font-semibold">
+          {Links.map((link, i) => (
+            <li key={i} className="md:ml-8 md:my-0 my-7 font-semibold">
               <a
                 href={link.link}
                 className="text-white-800 hover:text-blue-400 duration-500"

@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function About() {
   return (
-    <div className="text-white mt-40 flex mx-auto justify-center p-10">
+    <div id="about" className="text-white flex mx-auto justify-center p-10 min-h-screen">
       <div className="flex flex-col md:flex-row items-center gap-20">
         <div>
           <img
@@ -15,7 +15,7 @@ export default function About() {
           />
         </div>
         <div className="max-w-4xl gap-12 flex flex-col">
-          <div class="">
+          <div>
             <h1 className="font-bold text-5xl sm:text-7xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               <span className="text-clip">Hi! I am </span>
               <br />
