@@ -14,9 +14,9 @@ export default function About() {
             className="max-w-full h-auto"
           />
         </div>
-        <div className="max-w-4xl gap-6 flex flex-col">
+        <div className="max-w-4xl gap-12 flex flex-col">
           <div class="">
-            <h1 className="font-bold text-7xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+            <h1 className="font-bold text-5xl sm:text-7xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               <span className="text-clip">Hi! I am </span>
               <br />
               <span className="text-white">
@@ -37,13 +37,13 @@ export default function About() {
               </span>
             </h1>
           </div>
-          <p className="text-xl text-gray-400">
+          <p className="text-l sm:text-xl sm:leading-8 text-gray-400">
             A motivated developer with a passion for creating innovative and
             user-friendly applications, eager to leverage academic background
             and practical experience to contribute effectively to a dynamic
             development team.
           </p>
-          <div className="flex gap-4">
+          <div className="flex gap-7 mt-3">
             <Button gradientDuoTone={'purpleToBlue'} pill>Hire me</Button>
             <Button gradientDuoTone={'purpleToBlue'} outline className="text-white dark-background dark" pill>View Resume</Button>
 

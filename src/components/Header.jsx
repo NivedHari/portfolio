@@ -13,10 +13,11 @@ export default function Header() {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 border-b border-gray-700 py-2 font-poppins px-14">
-      <div className="md:flex items-center justify-between bg-black text-white py-4 md:px-10 px-7">
+    <div className="shadow-md w-full fixed top-0 left-0 border-b border-gray-700 font-poppins px-14 bg-black z-50">
+      <div className="md:flex items-center justify-between  text-white py-4 md:px-10 px-7 z-50">
+
         {/* logo section */}
-        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1">
+        <div className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-full">
           <img src={"/images/icon.svg"} width={150} height={100}/>
         </div>
         {/* Menu icon */}
@@ -26,10 +27,10 @@ export default function Header() {
         >
           {open ? <XMarkIcon /> : <Bars3BottomRightIcon />}
         </div>
-        {/* linke items */}
+        {/* link items */}
         <ul
           className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black text-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
-            open ? "top-12" : "top-[-490px]"
+            open ? "top-17" : "top-[-490px]"
           }`}
         >
           {Links.map((link) => (
