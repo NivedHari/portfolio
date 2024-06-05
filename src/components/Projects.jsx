@@ -9,7 +9,7 @@ export default function Projects() {
         Projects
       </h1>
 
-      <div className="flex flex-wrap gap-10 max-w-7xl mx-auto my-10">
+      <div className="flex flex-wrap gap-10 max-w-7xl mx-auto my-10 p-7">
         {ProjectData.map((project) => (
           <ProjectCard
             key={project.id}
