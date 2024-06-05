@@ -2,8 +2,14 @@ import { Button } from "flowbite-react";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function About() {
+  const openResume = () => {
+    window.open("/pdf/RESUME-NIVED HARI.pdf", "_blank");
+  };
   return (
-    <div id="about" className="text-white flex mx-auto justify-center mt-20 md:mt-0 p-10 min-h-screen">
+    <div
+      id="about"
+      className="text-white flex mx-auto justify-center mt-20 md:mt-0 p-10 min-h-screen"
+    >
       <div className="flex flex-col md:flex-row items-center gap-20">
         <div>
           <img
@@ -16,10 +22,10 @@ export default function About() {
         </div>
         <div className="max-w-4xl gap-12 flex flex-col">
           <div>
-            <h1 className="font-bold text-5xl sm:text-7xl text-white">
+            <h1 className="font-bold text-5xl sm:text-7xl bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
               <span className="text-clip">Hi! I am </span>
               <br />
-              <span className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
+              <span className="text-white">
                 <Typewriter
                   words={[
                     "Nived Hari",
@@ -44,10 +50,21 @@ export default function About() {
             development team.
           </p>
           <div className="flex gap-7 mt-3 ">
-            <a href="#contact"><Button gradientDuoTone={'purpleToBlue'} pill>Hire me</Button></a>
-            <Button gradientDuoTone={'purpleToBlue'} outline className="text-white dark-background dark" pill>View Resume</Button>
-
-            
+            <a href="#contact">
+              <Button gradientDuoTone={"purpleToBlue"} pill size={"xl"}>
+                Hire me
+              </Button>
+            </a>
+            <Button
+              gradientDuoTone={"purpleToBlue"}
+              outline
+              className="text-white dark-background dark"
+              pill
+              size={"xl"}
+              onClick={openResume}
+            >
+              View Resume
+            </Button>
           </div>
         </div>
       </div>
