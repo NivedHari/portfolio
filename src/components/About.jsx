@@ -3,15 +3,15 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function About() {
   const openResume = () => {
-    window.open("/pdf/RESUME-NIVED HARI.pdf", "_blank");
+    window.open("/pdf/Nived_Hari_Resume.pdf", "_blank");
   };
   return (
     <div
       id="about"
       className="text-white flex mx-auto justify-center mt-20 md:mt-0 p-10 min-h-screen"
     >
-      <div className="flex flex-col md:flex-row items-center gap-20">
-        <div>
+      <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 ">
+        <div className="">
           <img
             src="/images/profile-pic.png"
             width={300}
@@ -43,7 +43,7 @@ export default function About() {
               </span>
             </h1>
           </div>
-          <p className="text-2xl sm:text-2xl sm:leading-8 text-gray-400">
+          <p className="text-2xl sm:leading-8 text-gray-400">
             A motivated developer with a passion for creating innovative and
             user-friendly applications, eager to leverage academic background
             and practical experience to contribute effectively to a dynamic

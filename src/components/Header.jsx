@@ -3,17 +3,20 @@ import { Bars3BottomRightIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
   let Links = [
-    { name: "About", link: '#about' },
+    { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
   ];
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 border-b border-gray-700 font-poppins px-14 bg-black z-50">
+    <div className="shadow-md w-full fixed top-0 left-0 border-b border-gray-700 px-14 bg-black z-50">
       <div className="md:flex items-center justify-between  text-white py-4 md:px-10 px-7 z-50">
         {/* logo section */}
-        <a href="#about" className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-full">
+        <a
+          href="#about"
+          className="font-bold text-2xl cursor-pointer flex items-center gap-1 w-full"
+        >
           <img src={"/images/icon.svg"} width={150} height={100} />
         </a>
         {/* Menu icon */}
