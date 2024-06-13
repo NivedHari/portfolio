@@ -13,11 +13,11 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center gap-10 md:gap-20 ">
         <div className="">
           <img
-            src="/images/profile-pic.png"
+            src="/images/file.png"
             width={300}
-            height={300}
+            height={500}
             alt="Profile picture "
-            className="max-w-full h-auto"
+            className="max-w-full h-full rounded-b-3xl w-96 "
           />
         </div>
         <div className="max-w-4xl gap-12 flex flex-col">
