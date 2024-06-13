@@ -16,7 +16,7 @@ export default function About() {
     return () => {
       window.removeEventListener("scroll", ControlPicture);
     };
-  },[]);
+  }, []);
   const openResume = () => {
     window.open("/pdf/Resume-Nived-Hari.pdf", "_blank");
   };
@@ -32,12 +32,9 @@ export default function About() {
             width={300}
             height={500}
             alt="Profile picture "
-<<<<<<< HEAD
-            className="max-w-full h-full rounded-b-3xl w-96 "
-=======
-            className={` ${!show && 'md:opacity-0'} md:absolute max-w-full md:h-full md:rounded-b-3xl md:w-[600px] md:top-10 md:left-5 -z-50 transition ease-out duration-500`}
-
->>>>>>> c8fe08db1cf3a3bebc9fe725c33f7440480f2e34
+            className={` ${
+              !show && "md:opacity-0"
+            } md:absolute max-w-full md:h-full md:rounded-b-3xl md:w-[600px] md:top-10 md:left-5 -z-50 transition ease-out duration-500`}
           />
         </div>
         <div className="max-w-4xl gap-12 flex flex-col md:max-w-4xl md:ml-96">

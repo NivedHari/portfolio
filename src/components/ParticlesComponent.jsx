@@ -1,21 +1,17 @@
-// ParticlesComponent.js
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; 
+import { loadSlim } from "@tsparticles/slim";
 
 const ParticlesComponent = ({ id }) => {
   const [init, setInit] = useState(false);
 
-
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
     });
   }, []);
-
 
   const options = useMemo(
     () => ({
@@ -33,11 +29,7 @@ const ParticlesComponent = ({ id }) => {
           },
           onHover: {
             enable: true,
-<<<<<<< HEAD
             mode: "attract",
-=======
-            mode: "repulse",
->>>>>>> c8fe08db1cf3a3bebc9fe725c33f7440480f2e34
           },
         },
         modes: {
@@ -93,15 +85,10 @@ const ParticlesComponent = ({ id }) => {
   );
 
   if (!init) {
-    return null; 
+    return null;
   }
 
-  return (
-    <Particles
-      id={id}
-      options={options}
-    />
-  );
+  return <Particles id={id} options={options} />;
 };
 
 export default ParticlesComponent;
