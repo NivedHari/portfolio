@@ -33,7 +33,11 @@ const ParticlesComponent = ({ id }) => {
           },
           onHover: {
             enable: true,
+<<<<<<< HEAD
             mode: "attract",
+=======
+            mode: "repulse",
+>>>>>>> c8fe08db1cf3a3bebc9fe725c33f7440480f2e34
           },
         },
         modes: {

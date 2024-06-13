@@ -5,6 +5,7 @@ export const ProjectData = [
     name: "PrimeEstates",
     tech: "MERN stack, Tailwind CSS",
     git: "https://github.com/NivedHari/mern-estate.git",
+    live: "https://mern-estate-062x.onrender.com",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const ProjectData = [
     name: "TypoTales Blog",
     tech: "MERN stack, Tailwind CSS",
     git: "https://github.com/NivedHari/blog-mern.git",
+    live: "https://typo-tales-t4l8.onrender.com",
   },
   {
     id: 3,
@@ -47,5 +49,6 @@ export const ProjectData = [
     name: "Imdb Clone",
     tech: "Next.js,Tailwind CSS",
     git: "https://github.com/NivedHari/imdb-clone-next.js.git",
+    live: "https://imdb-clone--tau.vercel.app",
   },
 ];

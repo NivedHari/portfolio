@@ -12,7 +12,15 @@ html {
   }
   
 #tsparticles{
+<<<<<<< HEAD
     z-index: -1;
     position: absolute;
     opacity: 15%;
 }  
+=======
+    z-index: -51;
+    position: absolute;
+    opacity: 25%;
+}  
+
+>>>>>>> c8fe08db1cf3a3bebc9fe725c33f7440480f2e34
