@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import { ProjectData } from "../Data/ProjectData";
 import ReactSwipe from "react-swipe";
-import { Button } from "flowbite-react";
 import { IoIosArrowForward,IoIosArrowBack } from "react-icons/io";
 
 export default function Projects() {

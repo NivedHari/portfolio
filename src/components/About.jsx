@@ -18,7 +18,7 @@ export default function About() {
     };
   },[]);
   const openResume = () => {
-    window.open("/pdf/Nived_Hari_Resume.pdf", "_blank");
+    window.open("/pdf/Resume-Nived-Hari.pdf", "_blank");
   };
   return (
     <div
