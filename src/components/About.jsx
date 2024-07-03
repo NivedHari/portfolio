@@ -18,7 +18,7 @@ export default function About() {
     };
   }, []);
   const openResume = () => {
-    window.open("/pdf/Resume-Nived-Hari.pdf", "_blank");
+    window.open("/pdf/Resume-Nived-Hari_updated.pdf", "_blank");
   };
   return (
     <div
@@ -31,7 +31,7 @@ export default function About() {
             src="/images/file.png"
             width={300}
             height={500}
-            alt="Profile picture "
+            alt="Profile picture"
             className={` ${
               !show && "md:opacity-0"
             } md:absolute max-w-full md:h-full md:rounded-b-3xl md:w-[600px] md:top-10 md:left-5 -z-50 transition ease-out duration-500`}
